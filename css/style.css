@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    margin: 0 auto;
+}
+
+h1,h2,h3{
+    font-family: 'Noto Sans Georgian', sans-serif;
+}
+
+p{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+header{
+    background-color: rgb(151,120,209);
+}
+
+nav{
+    font-family: 'Noto Sans Georgian', sans-serif;
+    padding: 3%;
+}
+
+.topo{
+    display: flex;
+    justify-content: center;
+}
+
+.top ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.topo nav ul li{
+    display: inline;
+    padding: 10px;
+}
+
+.topo nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 900;
+   
+}
+
+.topo nav ul li a:hover{
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.site{
+    max-width: 1200px; /*Largura maxima do conteudo do site*/
+    width: 100%;
+	margin: 0 auto;
+}
+
+.banner img{
+    width: 100%;
+}
+
+.sobre{
+	margin: 1% 0;
+  padding-top: 5%;
+}
+
+.sobre div{
+	display: flex;
+	justify-content: space-around;
+	
+}
+
+.sobre div article{
+	width: 45%;
+	padding-bottom: 5%;
+}
+
+.sobre h2{
+    text-align: center;
+    padding-bottom: 1%;
+    border-bottom: 2px solid;
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.sobre p {
+    font-size: 1.1em;
+    text-align: justify;
+    font-weight: 400;
+    padding: 5%;
+    margin-top: 1%;
+    line-height: 25px;
+}
+
+.sobre article img{
+	width: 100%;
+    border: 2px solid black;
+}
+
+.PorqueJP{
+    background-image: url(../img/PorqueJP.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 4%;
+    padding-bottom: 5%;
+}
+
+.box-video{
+    border: 2px solid black;
+	border-radius: 0.25rem;
+    background: white;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box-video h2{
+    background-color: rgb(151,120,209);
+    text-align: center;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 2%;
+    font-size: 26px;
+}
+
+.curso-modulos{
+    padding-bottom: 2%;
+}
+
+.curso-modulos h2{
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    border-bottom: 2px solid;
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1%;
+}
+
+.box-modulos{
+    border: 2px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+}
+
+.conteudo{
+    display: flex;
+    justify-content: space-around;
+}
+
+.curso-modulos img{
+    width: 200px;
+}
+
+.descricao-modulos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.descricao-modulos h3{
+    text-align: center;
+    padding-top: 4%;
+    padding-bottom: 2%;
+}
+
+.hiragana{
+    width: 300px;
+}
+
+.katakana{
+    width: 300px;
+    padding-bottom: 2%;
+}
+
+.kanji{
+    width: 300px;
+}
+
+.avaliacoes{
+    background-color: rgb(151,120,209);
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.avaliacoes h2{
+    text-align: center;
+    padding-bottom: 1%;
+    border-bottom: 2px solid;
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2%;
+}
+
+.container{
+    position: relative;
+    perspective: 1000px;
+  }
+
+.container .slide-container .slide{
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px #3337;
+    width: 50%;
+    height: 230px;
+    margin: 0 auto;
+    padding: 20px;
+    transform-style: preserve-3d;
+  }
+  
+  .container .slide-container .slide .user{
+    display: flex;
+    align-items: center;
+  }
+  
+  .container .slide-container .slide .icon{
+    position : absolute;
+    top: 10px; right:15px;
+    font-size: 90px;
+    color: #3498db;
+  }
+  
+  .container .slide-container .slide img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .container .slide-container .slide .user .user-info h3 {
+    color: #333;
+    font-size: 15px;
+  
+  }
+  
+  .container .slide-container .slide .user .user-info .stars i{
+    color: rgb(244, 109, 117);
+    font-size: 15px;
+  
+  }
+  
+  .container .slide-container .slide .text {
+    color: #000;
+    font-size: 15px;
+    padding-top: 15px;
+    font-style: italic;
+    text-align: justify;
+  
+  }
+  
+  .container .slide-container{
+    display: none;
+  }
+  
+  .container .slide-container.active{
+    display: block;
+  }
+  
+  .container #next,
+  .container #prev{
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    background: #fff;
+    color: #333;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px #3337;
+  
+  }
+  
+  .container #next{
+    margin-left: 80%;
+  
+  }
+  
+  .container #prev{
+    margin-left: 15.5%;
+  }
+  
+  .container #next:hover,
+  .container #prev:hover{
+    background: #333;
+    color: #fff;
+  
+  }
+
+  hr{
+    height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+  }
+  
+  footer{
+    padding: 2%;
+  }
+
+  footer h2{
+    text-align: center;
+    padding-bottom: 1%;
+  }
+
+  footer p{
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.2em;
+  }
+
+  .icon-contato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5%;
+  }
+
+  .icon-contato img{
+    width: 40px;
+    
+   
+  }
+
+  footer h3{
+    text-align: center;
+  }
+
+
+
+
+
+
+::selection{
+    color: #fff;
+    background: #007bff;
+}
+
+::-webkit-scrollbar{
+    width: 3px;
+    border-radius: 25px;
+}
+::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+    background: #ddd;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #ccc;
+}
+
+.wrapper{
+    display: none;
+    width: 300px;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    border-top: 0px;
+    float: right;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+.wrapper .title{
+    background: rgb(151,120,209);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+}
+.wrapper .form{
+  padding: 20px 15px;
+  min-height: 250px;
+  max-height: 250px;
+  overflow-y: auto;
+}
+.wrapper .form .inbox{
+    width: 100%;
+    display: flex;
+}
+.wrapper .form .user-inbox{
+    justify-content: flex-end;
+    margin: 13px 0;
+}
+.wrapper .form .inbox .img-chat{
+    height: 60px;
+    width: 60px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    background-image: url(../asian_chat.png);
+}
+.wrapper .form .inbox .msg-header{
+    max-width: 53%;
+    margin-left: 10px;
+}
+.form .inbox .msg-header p{
+    color: #fff;
+    background: rgb(151,120,209);
+    border-radius: 10px;
+    padding: 8px 10px;
+    font-size: 14px;
+}
+.form .user-inbox .msg-header p{
+    color: #333;
+    background: #efefef;
+}
+.wrapper .typing-field{
+    display: flex;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #efefef;
+    border-top: 1px solid #d9d9d9;
+    border-radius: 0 0 5px 5px;
+}
+.wrapper .typing-field .input-data{
+    height: 40px;
+    width: 335px;
+    position: relative;
+}
+.wrapper .typing-field .input-data input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: 1px solid transparent;
+    padding: 0 80px 0 15px;
+    border-radius: 3px;
+    font-size: 15px;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+.typing-field .input-data input:focus{
+    border-color: rgba(0,123,255,0.8);
+}
+.input-data input::placeholder{
+    color: #999999;
+    transition: all 0.3s ease;
+}
+.input-data input:focus::placeholder{
+    color: #bfbfbf;
+}
+.wrapper .typing-field .input-data button{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    height: 30px;
+    width: 65px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 3px;
+    background: rgb(151,120,209);
+    border: 1px solid black;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+.wrapper .typing-field .input-data input:valid ~ button{
+    opacity: 1;
+    pointer-events: auto;
+}
+.typing-field .input-data button:hover{
+    background: #006fef;
+}
