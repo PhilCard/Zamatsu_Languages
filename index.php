@@ -13,10 +13,10 @@
             <div class="topo"> 
                 <nav> 
                     <ul>
-                        <li> <a href="index.php">  HOME </a> </li>
-                        <li> <a href="#Sobre">  SOBRE NÓS </a> </li>
-                        <li> <a href="#Curso">  CURSO </a> </li>
-                        <li> <a href="#Contato">  CONTATO </a> </li>
+                        <li> <a href="index.php"> <span class="icon iconHome"> </span> <span>  HOME </span> </a> </li>
+                        <li> <a href="#Sobre"> <span class="icon iconSobre"> </span> <span>  SOBRE NÓS </span> </a> </li>
+                        <li> <a href="#Curso"> <span class="icon iconCurso"> </span> <span>  CURSO </span> </a> </li>
+                        <li> <a href="#Contato">  <span class="icon iconContato"> </span> <span>  Contato </span> </a> </li>
                     </ul>
                 </nav>
             </div>
@@ -28,7 +28,6 @@
         <a name="Sobre"> </a>
         <section class="sobre">
             <div class="site">
-                
                 <article>
                     <h2> Sobre Nós </h2>
                     <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, Zamatsu JP printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised Zamatsu JP with the release of Letraset sheets Zamatsu JP Lorem Ipsum passages. </p>
@@ -48,31 +47,56 @@
                 </div>
             </div>
         </section>
-
-
+        
         <div class="wrapper">
             <div class="title">Zamatsu Chat </div>
                 <div class="form">
                     <div class="bot-inbox inbox">
                         <div class="img-chat"> </div>
                         <div class="msg-header">
-                            <p>Possui dúvidas ? tecle sim para começar o autoatendimento</p>
+                            <p>Possui dúvidas ? <br> tecle sim para começar o autoatendimento </p>
                         </div>
                     </div>
                 </div>
             <div class="typing-field">
                 <div class="input-data">
-                    <input id="data" type="text" placeholder="Type something here.." required>
-                    <button id="send-btn">Send</button>
+                    <input id="data" type="text" placeholder="Digite aqui" required>
+                    <button id="send-btn">Enviar</button>
                 </div>
             </div>
+        </div>
+
+        <div class="chat-icone">
+            <button id="abre-chat" style="cursor:pointer;"> <img src="img/typing_chat.gif" style="width:80px;"> </button>
         </div>
 
         <a name="Curso"> </a>
         <section class="curso-modulos">
             <h2> Módulos do Curso </h2>
             <div class="site">
-                
+                <div class="conteudo-box">
+                    <div class="card-modulo">
+                        <div class="pic-box">
+                            <img src="img/kimono-g051962c8b_640.jpg">
+                        </div>
+                        <h3> japonês para viagens </h3>
+                        <p> você poderá usar os conhecimentos desse modulo para realizar uma viagem ao japão </p>
+                    </div>
+                    <div class="card-modulo">
+                        <div class="pic-box">
+                            <img src="img/kimono-g051962c8b_640.jpg">
+                        </div>
+                        <h3> japonês para viagens </h3>
+                        <p> você poderá usar os conhecimentos desse modulo para realizar uma viagem ao japão </p>
+                    </div>
+                    <div class="card-modulo">
+                        <div class="pic-box">
+                            <img src="img/kimono-g051962c8b_640.jpg">
+                        </div>
+                        <h3> japonês para viagens </h3>
+                        <p> você poderá usar os conhecimentos desse modulo para realizar uma viagem ao japão </p>
+                    </div>
+                </div>
             </div>
         </section>
 

@@ -1,3 +1,9 @@
+$("#abre-chat").on("click", function(){
+    $(".wrapper").show();
+    $(".chat-icone").hide();
+    
+});
+
 $(document).ready(function(){
     $("#send-btn").on("click", function(){
         $value = $("#data").val();
@@ -5,7 +11,6 @@ $(document).ready(function(){
         $(".form").append($msg);
         $("#data").val('');
         
-        // start ajax code
         $.ajax({
             url: 'message.php',
             type: 'POST',

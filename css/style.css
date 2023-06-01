@@ -25,36 +25,62 @@ header{
     background-color: rgb(151,120,209);
 }
 
-nav{
-    font-family: 'Noto Sans Georgian', sans-serif;
-    padding: 3%;
-}
-
 .topo{
-    display: flex;
-    justify-content: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+
 }
 
-.top ul{
+.topo nav ul {
     display: flex;
     justify-content: space-between;
 }
 
-.topo nav ul li{
-    display: inline;
-    padding: 10px;
+.topo nav ul li {
+    display: block;
+    padding: 26px 30px;
+    margin: 0 15px;
 }
 
 .topo nav ul li a{
+    font-size: 18px;
     text-decoration: none;
-    color: #000;
-    font-weight: 900;
-   
+    color: #ffffff;
 }
 
 .topo nav ul li a:hover{
     color: white;
     border-bottom: 2px solid white;
+}
+
+.icon{
+	display: flex;
+	margin-bottom: 10px;
+	padding: 20px;
+	align-items: baseline;
+    height: 20px;
+}
+
+.iconHome{
+    background: url(../img/icon/home.svg) no-repeat;
+    margin-left: 4px;
+}
+
+.iconSobre{
+    background: url(../img/icon/sobre.svg) no-repeat;
+    margin-left: 8px;
+}
+.iconContato{
+    background: url(../img/icon/contato.svg) no-repeat;
+    margin-left: 20px;
+}
+
+.iconCurso{
+    background: url(../img/icon/scroll-svgrepo-com.svg) no-repeat;
+    margin-left: 8px;
 }
 
 .site{
@@ -66,6 +92,163 @@ nav{
 .banner img{
     width: 100%;
 }
+
+
+/* <---- Começo chatbot ----> */
+
+.chat-icone img{
+    position: absolute;
+    right: 25px;
+    margin-top: 17%;
+    border: 2px solid #d9d9d9;
+    border-radius: 30px;
+}
+
+::selection{
+    color: #fff;
+    background: #007bff;
+}
+
+::-webkit-scrollbar{
+    width: 3px;
+    border-radius: 25px;
+}
+::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+    background: #ddd;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #ccc;
+}
+
+.wrapper{
+    display: none;
+    position: absolute;
+    right: 25px;
+    width: 300px;
+    margin-top: 5%;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    border-top: 0px;
+    border-top-left-radius: 10px;
+    
+}
+.wrapper .title{
+    background: rgb(151,120,209);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 10px;
+}
+.wrapper .form{
+  padding: 20px 15px;
+  min-height: 250px;
+  max-height: 250px;
+  overflow-y: auto;
+}
+.wrapper .form .inbox{
+    width: 100%;
+    display: flex;
+}
+.wrapper .form .user-inbox{
+    justify-content: flex-end;
+    margin: 13px 0;
+}
+.wrapper .form .inbox .img-chat{
+    height: 60px;
+    width: 60px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    background-image: url(../asian_chat.png);
+}
+.wrapper .form .inbox .msg-header{
+    max-width: 75%;
+    margin-left: 10px;
+}
+.form .inbox .msg-header p{
+    color: #fff;
+    background: rgb(151,120,209);
+    border-radius: 10px;
+    padding: 8px 10px;
+    font-size: 14px;
+}
+.form .user-inbox .msg-header p{
+    color: #333;
+    background: #efefef;
+}
+.wrapper .typing-field{
+    display: flex;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #efefef;
+    border-top: 1px solid #d9d9d9;
+    border-radius: 0 0 5px 5px;
+}
+.wrapper .typing-field .input-data{
+    height: 40px;
+    width: 335px;
+    position: relative;
+}
+.wrapper .typing-field .input-data input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: 1px solid transparent;
+    padding: 0 80px 0 15px;
+    border-radius: 3px;
+    font-size: 15px;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+.typing-field .input-data input:focus{
+    border-color: rgba(0,123,255,0.8);
+}
+.input-data input::placeholder{
+    color: #999999;
+    transition: all 0.3s ease;
+}
+.input-data input:focus::placeholder{
+    color: #bfbfbf;
+}
+.wrapper .typing-field .input-data button{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    height: 30px;
+    width: 65px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 3px;
+    background: rgb(151,120,209);
+    border: 1px solid black;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+.wrapper .typing-field .input-data input:valid ~ button{
+    opacity: 1;
+    pointer-events: auto;
+}
+.typing-field .input-data button:hover{
+    background: #006fef;
+}
+
+/* <---- Fim chatbot ----> */
 
 .sobre{
 	margin: 1% 0;
@@ -147,43 +330,25 @@ nav{
     margin-bottom: 1%;
 }
 
-.box-modulos{
-    border: 2px solid rgba(0,0,0,.125);
-    border-radius: 0.25rem;
-}
-
-.conteudo{
+.conteudo-box{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
-.curso-modulos img{
-    width: 200px;
-}
-
-.descricao-modulos{
-    display: flex;
-    justify-content: space-around;
-}
-
-.descricao-modulos h3{
+.card-modulo{
     text-align: center;
-    padding-top: 4%;
-    padding-bottom: 2%;
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 350px;
+    width: 300px;
+    margin-left: 2%;
 }
 
-.hiragana{
-    width: 300px;
+.pic-box img {
+    width: 100%;
+    border-bottom: 1px solid black;
 }
 
-.katakana{
-    width: 300px;
-    padding-bottom: 2%;
-}
-
-.kanji{
-    width: 300px;
-}
 
 .avaliacoes{
     background-color: rgb(151,120,209);
@@ -338,147 +503,3 @@ nav{
     text-align: center;
   }
 
-
-
-
-
-
-::selection{
-    color: #fff;
-    background: #007bff;
-}
-
-::-webkit-scrollbar{
-    width: 3px;
-    border-radius: 25px;
-}
-::-webkit-scrollbar-track{
-    background: #f1f1f1;
-}
-::-webkit-scrollbar-thumb{
-    background: #ddd;
-}
-::-webkit-scrollbar-thumb:hover{
-    background: #ccc;
-}
-
-.wrapper{
-    display: none;
-    width: 300px;
-    background: #fff;
-    border-radius: 5px;
-    border: 1px solid lightgrey;
-    border-top: 0px;
-    float: right;
-    margin-right: 2%;
-    margin-top: 2%;
-}
-.wrapper .title{
-    background: rgb(151,120,209);
-    color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 60px;
-    text-align: center;
-    border-radius: 5px 5px 0 0;
-}
-.wrapper .form{
-  padding: 20px 15px;
-  min-height: 250px;
-  max-height: 250px;
-  overflow-y: auto;
-}
-.wrapper .form .inbox{
-    width: 100%;
-    display: flex;
-}
-.wrapper .form .user-inbox{
-    justify-content: flex-end;
-    margin: 13px 0;
-}
-.wrapper .form .inbox .img-chat{
-    height: 60px;
-    width: 60px;
-    color: #fff;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    font-size: 18px;
-    background-image: url(../asian_chat.png);
-}
-.wrapper .form .inbox .msg-header{
-    max-width: 53%;
-    margin-left: 10px;
-}
-.form .inbox .msg-header p{
-    color: #fff;
-    background: rgb(151,120,209);
-    border-radius: 10px;
-    padding: 8px 10px;
-    font-size: 14px;
-}
-.form .user-inbox .msg-header p{
-    color: #333;
-    background: #efefef;
-}
-.wrapper .typing-field{
-    display: flex;
-    height: 60px;
-    width: 100%;
-    align-items: center;
-    justify-content: space-evenly;
-    background: #efefef;
-    border-top: 1px solid #d9d9d9;
-    border-radius: 0 0 5px 5px;
-}
-.wrapper .typing-field .input-data{
-    height: 40px;
-    width: 335px;
-    position: relative;
-}
-.wrapper .typing-field .input-data input{
-    height: 100%;
-    width: 100%;
-    outline: none;
-    border: 1px solid transparent;
-    padding: 0 80px 0 15px;
-    border-radius: 3px;
-    font-size: 15px;
-    background: #fff;
-    transition: all 0.3s ease;
-}
-.typing-field .input-data input:focus{
-    border-color: rgba(0,123,255,0.8);
-}
-.input-data input::placeholder{
-    color: #999999;
-    transition: all 0.3s ease;
-}
-.input-data input:focus::placeholder{
-    color: #bfbfbf;
-}
-.wrapper .typing-field .input-data button{
-    position: absolute;
-    right: 5px;
-    top: 50%;
-    height: 30px;
-    width: 65px;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    outline: none;
-    opacity: 0;
-    pointer-events: none;
-    border-radius: 3px;
-    background: rgb(151,120,209);
-    border: 1px solid black;
-    transform: translateY(-50%);
-    transition: all 0.3s ease;
-}
-.wrapper .typing-field .input-data input:valid ~ button{
-    opacity: 1;
-    pointer-events: auto;
-}
-.typing-field .input-data button:hover{
-    background: #006fef;
-}

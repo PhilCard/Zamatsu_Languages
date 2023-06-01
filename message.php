@@ -18,7 +18,7 @@
         $replay = $fetch_data['replies'];
         echo $replay;
     }else{
-        echo "Sorry can't be able to understand you!";
+        echo "Desculpa, não consegui te entender. <br> Pode digitar novamente?";
     }
 
 ?>
