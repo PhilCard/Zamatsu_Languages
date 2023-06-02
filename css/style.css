@@ -70,11 +70,11 @@ header{
 }
 
 .iconSobre{
-    background: url(../img/icon/sobre.svg) no-repeat;
+    background: url(../img/icon/sobre_nós.svg) no-repeat;
     margin-left: 8px;
 }
 .iconContato{
-    background: url(../img/icon/scroll-svgrepo-com.svg) no-repeat;
+    background: url(../img/icon/contato.svg) no-repeat;
     margin-left: 20px;
 }
 
@@ -304,7 +304,7 @@ header{
 /* <---- Começo video youtube ----> */
 
 .PorqueJP{
-    background-image: url(../img/PorqueJP.png);
+    background-image: url(../img/background.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     padding-top: 4%;
