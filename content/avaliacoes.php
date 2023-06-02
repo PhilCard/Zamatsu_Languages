@@ -1,6 +1,6 @@
 <section class="avaliacoes">
     <div class="site">
-        <h2> Avaliações dos Nossos Alunos </h2>
+        <h2> Depoimentos </h2>
         <div class="container">
             <div class="slide-container active">
                 <div class="slide">

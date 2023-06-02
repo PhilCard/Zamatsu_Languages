@@ -6,17 +6,17 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <title> Zamatsu JP </title>
+        <title> Zamatsu idiomas </title>
     </head>
     <body>
         <header>
             <div class="topo"> 
                 <nav> 
                     <ul>
-                        <li> <a href="index.php"> <span class="icon iconHome"> </span> <span>  HOME </span> </a> </li>
+                        <li> <a href="#Home"> <span class="icon iconHome"> </span> <span>  HOME </span> </a> </li>
                         <li> <a href="#Sobre"> <span class="icon iconSobre"> </span> <span>  SOBRE NÓS </span> </a> </li>
                         <li> <a href="#Curso"> <span class="icon iconCurso"> </span> <span>  CURSO </span> </a> </li>
-                        <li> <a href="#Contato">  <span class="icon iconContato"> </span> <span>  Contato </span> </a> </li>
+                        <li> <a href="#Contato">  <span class="icon iconContato"> </span> <span>  CONTATO </span> </a> </li>
                     </ul>
                 </nav>
             </div>
@@ -67,7 +67,7 @@
         </div>
 
         <div class="chat-icone">
-            <button id="abre-chat" style="cursor:pointer;"> <img src="img/typing_chat.gif" style="width:80px;"> </button>
+            <button id="abre-chat" style="cursor:pointer;"> <img src="img/typing_chat.gif" style="width:50px;"> </button>
         </div>
 
         <a name="Curso"> </a>
@@ -77,24 +77,24 @@
                 <div class="conteudo-box">
                     <div class="card-modulo">
                         <div class="pic-box">
-                            <img src="img/kimono-g051962c8b_640.jpg">
+                            <img src="img/img1.jpg">
                         </div>
-                        <h3> japonês para viagens </h3>
-                        <p> você poderá usar os conhecimentos desse modulo para realizar uma viagem ao japão </p>
+                        <h3> Viagens </h3>
+                        <p> Você poderá usar os conhecimentos desse modulo para realizar uma viagem ao japão </p>
                     </div>
                     <div class="card-modulo">
                         <div class="pic-box">
-                            <img src="img/kimono-g051962c8b_640.jpg">
+                            <img src="img/img2.jpg">
                         </div>
-                        <h3> japonês para viagens </h3>
-                        <p> você poderá usar os conhecimentos desse modulo para realizar uma viagem ao japão </p>
+                        <h3> Literatura </h3>
+                        <p> Você conseguirá ler os suas obras preferidas no idioma nativo em que foi escrito </p>
                     </div>
                     <div class="card-modulo">
                         <div class="pic-box">
-                            <img src="img/kimono-g051962c8b_640.jpg">
+                            <img src="img/img3.png">
                         </div>
-                        <h3> japonês para viagens </h3>
-                        <p> você poderá usar os conhecimentos desse modulo para realizar uma viagem ao japão </p>
+                        <h3> Conversação </h3>
+                        <p> Você vai conseguir falar o idioma da terra do sol nascente de forma fluente em poucos meses ! </p>
                     </div>
                 </div>
             </div>
@@ -109,8 +109,8 @@
                 <h2> Entre em contato </h2>
                 <p> zamatsu.idiomasjp@gmail.com </p>
                 <div class="icon-contato">
-                    <img src="img/facebook.svg">
-                    <img src="img/insta.svg">
+                    <img src="img/icon/facebook.svg">
+                    <img src="img/icon/insta.svg">
                 </div>
                 <h3> Av. Galvão bueno, liberdade, São paulo - SP, 0005482 </h3>
             </div>

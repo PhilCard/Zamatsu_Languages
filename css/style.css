@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300&display=swap'); 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Chorasmian&display=swap');
 
 * {
     margin: 0;
@@ -18,8 +17,10 @@ h1,h2,h3{
 }
 
 p{
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Noto Sans Chorasmian', sans-serif;
 }
+
+/* <---- Começo top nav ----> */
 
 header{
     background-color: rgb(151,120,209);
@@ -31,7 +32,6 @@ header{
 	display: flex;
 	justify-content: space-around;
 	align-content: center;
-
 }
 
 .topo nav ul {
@@ -74,14 +74,16 @@ header{
     margin-left: 8px;
 }
 .iconContato{
-    background: url(../img/icon/contato.svg) no-repeat;
+    background: url(../img/icon/scroll-svgrepo-com.svg) no-repeat;
     margin-left: 20px;
 }
 
 .iconCurso{
-    background: url(../img/icon/scroll-svgrepo-com.svg) no-repeat;
+    background: url(../img/icon/shuriken-svgrepo-com.svg) no-repeat;
     margin-left: 8px;
 }
+
+/* <---- Fim top nav ----> */
 
 .site{
     max-width: 1200px; /*Largura maxima do conteudo do site*/
@@ -95,6 +97,10 @@ header{
 
 
 /* <---- Começo chatbot ----> */
+
+.chat-fixo {
+    top: 0;
+}
 
 .chat-icone img{
     position: absolute;
@@ -131,7 +137,7 @@ header{
     margin-top: 5%;
     background: #fff;
     border-radius: 5px;
-    border: 1px solid lightgrey;
+    border: 1px solid rgb(151,120,209, 0.6);
     border-top: 0px;
     border-top-left-radius: 10px;
     
@@ -250,6 +256,9 @@ header{
 
 /* <---- Fim chatbot ----> */
 
+
+/* <---- Começo sobre ----> */
+
 .sobre{
 	margin: 1% 0;
   padding-top: 5%;
@@ -289,6 +298,11 @@ header{
     border: 2px solid black;
 }
 
+/* <---- Fim sobre ----> */
+
+
+/* <---- Começo video youtube ----> */
+
 .PorqueJP{
     background-image: url(../img/PorqueJP.png);
     background-repeat: no-repeat;
@@ -315,8 +329,13 @@ header{
     font-size: 26px;
 }
 
+/* <---- Fim video youtube ----> */
+
+
+/* <---- Começo curso modulos ----> */
+
 .curso-modulos{
-    padding-bottom: 2%;
+    padding-bottom: 5%;
 }
 
 .curso-modulos h2{
@@ -331,24 +350,46 @@ header{
 }
 
 .conteudo-box{
+    padding-top: 1%;
     display: flex;
     justify-content: center;
 }
 
 .card-modulo{
-    text-align: center;
-    border: 2px solid black;
+    box-shadow: 0 5px 10px #3337;
     border-radius: 5px;
-    height: 350px;
+    height: 330px;
     width: 300px;
-    margin-left: 2%;
+    margin-left: 3%;
+    background: rgb(151,120,209, 0.6);
 }
 
-.pic-box img {
+.pic-box img{
     width: 100%;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    height: 205px;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
 }
 
+.card-modulo h3{
+    text-align: center;
+    padding-top: 2%;
+    
+}
+
+.card-modulo p{
+    padding-top: 1%;
+    text-align: justify;
+    word-spacing: -2px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+/* <---- Fim curso modulos ----> */
+
+
+/* <---- Começo avaliações ----> */
 
 .avaliacoes{
     background-color: rgb(151,120,209);
@@ -369,70 +410,69 @@ header{
 .container{
     position: relative;
     perspective: 1000px;
-  }
+}
 
 .container .slide-container .slide{
     border-radius: 5px;
     background-color: #fff;
     box-shadow: 0 5px 10px #3337;
     width: 50%;
-    height: 230px;
+    height: 270px;
     margin: 0 auto;
     padding: 20px;
     transform-style: preserve-3d;
-  }
+}
   
-  .container .slide-container .slide .user{
+.container .slide-container .slide .user{
     display: flex;
     align-items: center;
-  }
+}
   
-  .container .slide-container .slide .icon{
+.container .slide-container .slide .icon{
     position : absolute;
     top: 10px; right:15px;
     font-size: 90px;
     color: #3498db;
-  }
+}
   
-  .container .slide-container .slide img{
+.container .slide-container .slide img{
     height: 100px;
     width: 100px;
     border-radius: 50%;
     object-fit: cover;
     margin-right: 10px;
-  }
+}
   
-  .container .slide-container .slide .user .user-info h3 {
+.container .slide-container .slide .user .user-info h3 {
     color: #333;
-    font-size: 15px;
+    font-size: 18px;
+    padding-bottom: 5%;
+}
   
-  }
+.container .slide-container .slide .user .user-info .stars i{
+    color: rgb(151,120,209);
+    font-size: 18px;  
+}
   
-  .container .slide-container .slide .user .user-info .stars i{
-    color: rgb(244, 109, 117);
-    font-size: 15px;
-  
-  }
-  
-  .container .slide-container .slide .text {
+.container .slide-container .slide .text {
     color: #000;
     font-size: 15px;
     padding-top: 15px;
     font-style: italic;
     text-align: justify;
   
-  }
+}
   
-  .container .slide-container{
+.container .slide-container{
     display: none;
-  }
+}
   
-  .container .slide-container.active{
+.container .slide-container.active{
     display: block;
-  }
+}
   
-  .container #next,
-  .container #prev{
+.container #next,
+.container #prev{
     position: absolute;
     top: 50%;
     transform:translateY(-50%);
@@ -447,59 +487,59 @@ header{
     border-radius: 50%;
     box-shadow: 0 5px 10px #3337;
   
-  }
+}
   
-  .container #next{
-    margin-left: 80%;
+.container #next{
+    margin-left: 80%;  
+}
   
-  }
-  
-  .container #prev{
+.container #prev{
     margin-left: 15.5%;
-  }
+}
   
-  .container #next:hover,
-  .container #prev:hover{
+.container #next:hover,
+.container #prev:hover{
     background: #333;
-    color: #fff;
-  
-  }
+    color: #fff;  
+}
 
-  hr{
+  /* <---- Fim avaliações ----> */
+
+  /* <---- Começo rodapé ----> */
+hr{
     height: 10px;
 	border: 0;
 	box-shadow: 0 10px 10px -10px #8c8b8b inset;
   }
   
-  footer{
+footer{
     padding: 2%;
-  }
+}
 
-  footer h2{
+footer h2{
     text-align: center;
     padding-bottom: 1%;
-  }
+}
 
-  footer p{
+footer p{
     text-align: center;
     font-weight: 800;
     font-size: 1.2em;
-  }
+}
 
-  .icon-contato{
+.icon-contato{
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 1.5%;
-  }
+}
 
-  .icon-contato img{
+.icon-contato img{
     width: 40px;
-    
-   
-  }
+}
 
-  footer h3{
+footer h3{
     text-align: center;
-  }
+}
 
+ /* <---- Fim rodapé ----> */
