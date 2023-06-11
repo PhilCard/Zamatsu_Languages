@@ -49,6 +49,9 @@
         </section>
         
         <div class="wrapper">
+            <div class="close-chat">
+                <button id="fecha-chat"> <img src="img/icon/close-svgrepo-com.svg"> </button>
+            </div>
             <div class="title">Zamatsu Chat </div>
                 <div class="form">
                     <div class="bot-inbox inbox">
@@ -65,9 +68,14 @@
                 </div>
             </div>
         </div>
-
-        <div class="chat-icone">
-            <button id="abre-chat" style="cursor:pointer;"> <img src="img/typing_chat.gif" style="width:50px;"> </button>
+    
+        <div id="chat-icone">
+            <button id="abre-chat" style="cursor:pointer;">
+                <div class="ballon"> 
+                    <p> Olá, posso ajudar? </p>
+                </div>
+                <img src="img/icon/chat.png" style="width:60px;"> 
+            </button>
         </div>
 
         <a name="Curso"> </a>
@@ -77,14 +85,14 @@
                 <div class="conteudo-box">
                     <div class="card-modulo">
                         <div class="pic-box">
-                            <img src="img/img1.jpg">
+                            <img src="img/img1.png">
                         </div>
                         <h3> Viagens </h3>
                         <p> Você poderá usar os conhecimentos desse modulo para realizar uma viagem ao japão </p>
                     </div>
                     <div class="card-modulo">
                         <div class="pic-box">
-                            <img src="img/img2.jpg">
+                            <img src="img/img2.png">
                         </div>
                         <h3> Literatura </h3>
                         <p> Você conseguirá ler os suas obras preferidas no idioma nativo em que foi escrito </p>
@@ -109,8 +117,8 @@
                 <h2> Entre em contato </h2>
                 <p> zamatsu.idiomasjp@gmail.com </p>
                 <div class="icon-contato">
-                    <img src="img/icon/facebook.svg">
-                    <img src="img/icon/insta.svg">
+                    <a href="https://www.facebook.com/" target="_blank"> <img src="img/icon/facebook.svg"> </a>
+                    <a href="https://www.instagram.com/felipe_valentine/" target="_blank"> <img src="img/icon/insta.svg"> </a>
                 </div>
                 <h3> Av. Galvão bueno, liberdade, São paulo - SP, 0005482 </h3>
             </div>

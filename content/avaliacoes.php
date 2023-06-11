@@ -52,7 +52,7 @@
                     <div class="user">
                         <img src="img/person3.png" alt="">
                         <div class="user-info">
-                            <h3> Mariana </h3>
+                            <h3> Italo </h3>
                             <div class="stars">
                                 <i class="fas fa-star "></i>
                                 <i class="fas fa-star "></i>
