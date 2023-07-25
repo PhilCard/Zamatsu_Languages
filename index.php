@@ -4,8 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
         <title> Zamatsu idiomas </title>
     </head>
     <body>
@@ -23,6 +24,8 @@
         </header>
         <section class="banner">
             <img src="img/banner.png"> 
+            <img src="img/banner2.png"> 
+            <img src="img/banner3.png"> 
         </section>
 
         <a name="Sobre"> </a>
@@ -48,7 +51,7 @@
             </div>
         </section>
         
-        <div class="wrapper">
+        <div class="chat-body">
             <div class="close-chat">
                 <button id="fecha-chat"> <img src="img/icon/close-svgrepo-com.svg"> </button>
             </div>
@@ -57,7 +60,7 @@
                     <div class="bot-inbox inbox">
                         <div class="img-chat"> </div>
                         <div class="msg-header">
-                            <p>Possui dúvidas ? <br> tecle sim para começar o autoatendimento </p>
+                            <p> Seja muito bem vindo! <br> Possui dúvidas ? <br> Tecle sim para começar o atendimento </p>
                         </div>
                     </div>
                 </div>
@@ -95,19 +98,24 @@
                             <img src="img/img2.png">
                         </div>
                         <h3> Literatura </h3>
-                        <p> Você conseguirá ler os suas obras preferidas no idioma nativo em que foi escrito </p>
+                        <p> Já imaginou conseguir ler suas obras preferidas no idioma nativo ? </p>
                     </div>
                     <div class="card-modulo">
                         <div class="pic-box">
                             <img src="img/img3.png">
                         </div>
                         <h3> Conversação </h3>
-                        <p> Você vai conseguir falar o idioma da terra do sol nascente de forma fluente em poucos meses ! </p>
+                        <p> Em poucos meses estará falando o idioma da terra do sol nascente de forma fluente  ! </p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <section class="inscricao"> 
+            <h2> Não perca tempo! <br> Garanta sua vaga agora mesmo clicando no botão abaixo <br> </h2>
+            <button> <a href="inscricao.php"> Inscreva-se </a> </button>
+        </section>
+                      
         <?php require_once('content/avaliacoes.php'); ?>
         
         <hr>
@@ -123,7 +131,10 @@
                 <h3> Av. Galvão bueno, liberdade, São paulo - SP, 0005482 </h3>
             </div>
         </footer>
-        <script src="js_zamatsu/chat.js"> </script>
-        <script src="js_zamatsu/avaliacoes.js"> </script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="Js/slick.min.js"></script>
+        <script src="Js/banner.js"></script>
+        <script src="Js/chat.js"> </script>
+        <script src="Js/avaliacoes.js"> </script>
     </body>
 </html>

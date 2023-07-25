@@ -8,7 +8,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* LEMBRAR DE COSTUMIZAR O CSS, PADRONIZAR EM PT-BR */
+/* LEMBRAR DE ADICIONAR ANIMAÇÃO NA EXIBIÇÃO DO CHAT */
 
 body{
     margin: 0 auto;
@@ -72,7 +72,7 @@ header{
 }
 
 .iconSobre{
-    background: url(../img/icon/sobre_nós.svg) no-repeat;
+    background: url(../img/icon/sobre-nós.svg) no-repeat;
     margin-left: 8px;
 }
 .iconContato{
@@ -97,12 +97,36 @@ header{
     width: 100%;
 }
 
+.banner .slick-next {
+    right: 10px;
+}
+.banner .slick-prev {
+    left: 10px;
+    z-index: 999;
+}
+
+.banner .slick-dots {
+    position: relative;
+    margin-top: -80px;
+}
+
+.banner .slick-dots li button:before {
+    margin-top: 10px;
+    font-size: 80px;
+    opacity: 0.50;
+    color: #fff
+}
+.banner .slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #FFFFFF;
+}
+
 
 /* <---- Começo chatbot ----> */
 
 #chat-icone{
     position: fixed;
-    top: 86%;
+    top: 88%;
 }
 
 
@@ -115,7 +139,7 @@ header{
 
 .ballon{
     position: fixed;
-    top: 90%;
+    top: 92%;
     right: 95px;
     border-radius: 8px !important;
     padding: 9px;
@@ -140,29 +164,10 @@ header{
     background-size: 32px 32px;
 }
 
-::selection{
-    color: #fff;
-    background: #007bff;
-}
-
-::-webkit-scrollbar{
-    width: 3px;
-    border-radius: 25px;
-}
-::-webkit-scrollbar-track{
-    background: #f1f1f1;
-}
-::-webkit-scrollbar-thumb{
-    background: #ddd;
-}
-::-webkit-scrollbar-thumb:hover{
-    background: #ccc;
-}
-
-.wrapper{
+.chat-body{
     display: none;
     position: fixed;
-    top: 43%;
+    top: 38%;
     right: 25px;
     width: 300px;
     background: #fff;
@@ -171,6 +176,25 @@ header{
     border-top: 0px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+}
+
+.chat-body ::selection{
+    color: #fff;
+    background: #007bff;
+}
+
+.chat-body ::-webkit-scrollbar{
+    width: 3px;
+    border-radius: 25px;
+}
+.chat-body ::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+.chat-body ::-webkit-scrollbar-thumb{
+    background: #ddd;
+}
+.chat-body ::-webkit-scrollbar-thumb:hover{
+    background: #ccc;
 }
 
 #fecha-chat{
@@ -185,7 +209,7 @@ header{
     right: 10px;
 }
 
-.wrapper .title{
+.chat-body .title{
     background: rgb(151,120,209);
     color: #fff;
     font-size: 20px;
@@ -196,21 +220,25 @@ header{
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
-.wrapper .form{
+
+.chat-body .form{
   padding: 20px 15px;
   min-height: 250px;
   max-height: 250px;
   overflow-y: auto;
 }
-.wrapper .form .inbox{
+
+.chat-body .form .inbox{
     width: 100%;
     display: flex;
 }
-.wrapper .form .user-inbox{
+
+.chat-body .form .user-inbox{
     justify-content: flex-end;
     margin: 13px 0;
 }
-.wrapper .form .inbox .img-chat{
+
+.chat-body .form .inbox .img-chat{
     height: 60px;
     width: 60px;
     color: #fff;
@@ -220,22 +248,26 @@ header{
     font-size: 18px;
     background-image: url(../asian_chat.png);
 }
-.wrapper .form .inbox .msg-header{
+
+.chat-body .form .inbox .msg-header{
     max-width: 75%;
     margin-left: 10px;
 }
-.form .inbox .msg-header p{
+
+.chat-body .inbox .msg-header p{
     color: #fff;
     background: rgb(151,120,209);
     border-radius: 10px;
     padding: 8px 10px;
     font-size: 14px;
 }
-.form .user-inbox .msg-header p{
+
+.chat-body .user-inbox .msg-header p{
     color: #333;
     background: #efefef;
 }
-.wrapper .typing-field{
+
+.chat-body .typing-field{
     display: flex;
     height: 60px;
     width: 100%;
@@ -245,12 +277,14 @@ header{
     border-top: 1px solid #d9d9d9;
     border-radius: 0 0 5px 5px;
 }
-.wrapper .typing-field .input-data{
+
+.chat-body .typing-field .input-data{
     height: 40px;
     width: 335px;
     position: relative;
 }
-.wrapper .typing-field .input-data input{
+
+.chat-body .typing-field .input-data input{
     height: 100%;
     width: 100%;
     outline: none;
@@ -261,17 +295,21 @@ header{
     background: #fff;
     transition: all 0.3s ease;
 }
+
 .typing-field .input-data input:focus{
-    border-color: rgba(0,123,255,0.8);
+    border-color: rgb(151,120,209);
 }
+
 .input-data input::placeholder{
     color: #999999;
     transition: all 0.3s ease;
 }
+
 .input-data input:focus::placeholder{
     color: #bfbfbf;
 }
-.wrapper .typing-field .input-data button{
+
+.chat-body .typing-field .input-data button{
     position: absolute;
     right: 5px;
     top: 50%;
@@ -285,16 +323,18 @@ header{
     pointer-events: none;
     border-radius: 3px;
     background: rgb(151,120,209);
-    border: 1px solid black;
+    border: 1px solid rgba(0,0,0,.125);
     transform: translateY(-50%);
     transition: all 0.3s ease;
 }
-.wrapper .typing-field .input-data input:valid ~ button{
+
+.chat-body .typing-field .input-data input:valid ~ button{
     opacity: 1;
     pointer-events: auto;
 }
+
 .typing-field .input-data button:hover{
-    background: #006fef;
+    background:  rgb(0, 0, 0, 0.6);
 }
 
 /* <---- Fim chatbot ----> */
@@ -303,8 +343,8 @@ header{
 /* <---- Começo sobre ----> */
 
 .sobre{
-	margin: 1% 0;
-  padding-top: 5%;
+    margin: 1% 0;
+    padding-top: 8%;
 }
 
 .sobre div{
@@ -430,6 +470,44 @@ header{
 
 /* <---- Fim curso modulos ----> */
 
+/* <---- Começo Inscrição ---> */
+.inscricao {
+    color: #fff;
+    padding-bottom: 4%;
+    background-image: url(../img/inscricao.png);
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.inscricao a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.inscricao h2{
+    padding-top: 5%;
+    padding-bottom: 2%;
+    font-style: oblique;
+    font-size: 28px;
+    line-height: 52px;
+    font-weight: 800;
+}
+
+.inscricao button{
+    font-size: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 2%;
+    border: 2px solid black;
+    background: rgb(151,120,209, 0.6);
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.inscricao button:hover{
+    background-color: rgb(0, 0, 0, 0.6);
+}
+/* <---- Inscrição Fim ---> */
 
 /* <---- Começo avaliações ----> */
 

@@ -1,6 +1,6 @@
 <?php
     
-    $conn = mysqli_connect("localhost", "root", "", "chatbot") or die("Database Error");
+    $conn = mysqli_connect("localhost", "id20319069_zamatsu_adm", "526809@aB", "id20319069_zamatsu") or die("Database Error");
 
     // getting user message through ajax
     $getMesg = mysqli_real_escape_string($conn, $_POST['text']);
